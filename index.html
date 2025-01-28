@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng năm mới</title>
+    <link rel="stylesheet" href="./styles.css">
+ 
+</head>
+<body>
+    <canvas id="cas"></canvas>
+    <div id="Merry" class="christmas-message">Chúc mừng năm mới</div>
+    <img class="tree-icon">
+    <audio id="audio" src="./tet.mp3"></audio>
+    <div class="container">
+        <button id="showButton">
+            Thân gửi
+        </button>
+    </div>
+
+    <div id="guideInfo" class="hidden">
+        <button id="closeButton" class="close-btn">X</button>
+        <div class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="image/anhtet.png" alt="line slow">
+            </div>
+            <div class="details">
+                <h4 class="color1"></h2>
+                    <h4 class="color2 margin">Chúc mừng năm mới!</h3>
+                        <p><br></p>
+                        <p> </p>
+                        <p>Chúc cậu một năm mới an khang,</p>
+                        <p> thịnh vượng, vạn sự như ý,</p>
+                        <p> sức khỏe dồi dào và luôn </p>
+                        <p> tràn đầy niềm vui.</p>
+                        <p>Hy vọng mọi điều tốt đẹp sẽ đến </p>
+                        <p>với cậu trong năm nay!</p>
+                        <p><br></p>
+                        <p class="text-right">Best regards</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        document.body.addEventListener("click", function() {
+             var audio = document.getElementById("audio");
+             audio.play();
+         });
+     </script>
+</body>
+</html>
